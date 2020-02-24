@@ -21,16 +21,24 @@ end
 
 
 
+# def print_first_directors_movie_titles
+#   director_index = 0 
+#   while director_index < directors_database.length do 
+#     movies_index = 0 
+#     while movies_index < directors_database[director_index][:movies].length do 
+#       puts directors_database[director_index][:movies][movies_index][:title] 
+#       movies_index += 1 
+#     end 
+#     director_index +=9
+#   end 
+# end
+
 def print_first_directors_movie_titles
-  director_index = 0 
-  while director_index < directors_database.length do 
-    movies_index = 0 
-    while movies_index < directors_database[director_index][:movies].length do 
-      puts directors_database[director_index][:movies][movies_index][:title] 
-      movies_index += 1 
-    end 
-    director_index +=9
-  end 
+  movies_index = 0 
+  while movies_index < directors_database[0][:movies].length do 
+    puts directors_database[director_index][:movies][movies_index][:title] 
+    movies_index += 1 
+  end
 end
 
 #we have to make it so it won't move on to the next array which is directors_index > directors_database.length
